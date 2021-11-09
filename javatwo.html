@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result">0</h1>
+  <input type="number" placeholder="num1" id="inputone">  
+  <input type="number" placeholder="num2" id="inputtwo"> 
+  <button id="plus">+</button>
+  <button id="minus">-</button>
+  <button id="multiplication">*</button>
+  <button id="divide">/</button>
+</body>
+<script>
+const plus=document.getElementById("plus");
+const result = document.getElementById("result");
+const inputone=document.getElementById("inputone");
+const inputtwo=document.getElementById("inputtwo");
+
+plus.onclick=function() {
+const valueOne = parseInt(inputone.value);
+const valuetwo = parseInt(inputtwo.value);
+result.innerText=valueOne+valuetwo;
+};
+
+minus.onclick=function() {
+const valueOne = parseInt(inputone.value);
+const valuetwo = parseInt(inputtwo.value);
+result.innerText=valueOne-valuetwo;
+};
+
+multiplication.onclick=function() {
+const valueOne = parseInt(inputone.value);
+const valuetwo = parseInt(inputtwo.value);
+result.innerText=valueOne*valuetwo;
+};
+divide.onclick=function() {
+const valueOne = parseInt(inputone.value);
+const valuetwo = parseInt(inputtwo.value);
+result.innerText=valueOne/valuetwo;
+};
+
+//     const mySelf = {
+//         // proprety:valus,
+//         // key:value,
+//         name:"Ohad islam",
+//         Age:"19",
+//         Country:"pakistan",
+//         eating:function() {
+//             console.log("I am eating ricce");
+//         },
+//     };
+//     // object arry
+// const myStudents=[
+//     {
+//     roleNumber:6861,
+//     Name:"ohad",
+// }, 
+// {
+//     roleNumber:6961,
+//     Name:"hamza",
+// },
+//  {
+//     roleNumber:6661,
+//     Name:"ubai",
+// },
+// ]
+// console.log(myStudents);
+// console.log(mySelf,myStudents)
+
+    // console.log(mySelf.Age,mySelf.name);
+    // console.log(mySelf);
+    // console.log(mySelf.eating())
+
+
+// function add(firstNumber ,secound) {
+//     const result=firstNumber+secound;
+//     return result;
+// }
+// console.log(add(5,3));
+// console.log(add(6,3));
+// console.log(add(7,3));
+// console.log(add(8,3));
+// console.log(add(3,3));
+
+
+// function add(firstNumber ,secound) {
+//     const result=firstNumber+secound;
+//     return { firstNumber:firstNumber,secound:secound, result}
+// }
+// console.log(add(5,3));
+// console.log(add(6,3));
+// console.log(add(7,3));
+// console.log(add(8,3));
+// console.log(add(3,3));
+
+
+
+
+</script>
+</html>
